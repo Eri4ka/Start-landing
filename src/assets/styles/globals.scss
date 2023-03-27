@@ -1,8 +1,40 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
+
 html,
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $app-background-color;
+  overflow-x: hidden;
+}
+
+*,
+:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button {
+  border: none;
+  outline: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.center {
+  position: absolute;
+  @include alignment;
 }

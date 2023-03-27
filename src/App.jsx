@@ -1,5 +1,7 @@
-function App() {
-  return <div className='App' />;
-}
+import { Main } from 'components/Main';
+
+const App = () => {
+  return <Main />;
+};
 
 export default App;

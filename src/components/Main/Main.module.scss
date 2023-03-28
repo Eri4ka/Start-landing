@@ -2,10 +2,13 @@
 @import 'assets/styles/variables.scss';
 
 .root {
+  @include flex($align-items: center);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   padding: 4.5vh 5.5vw;
-  @include flex($align-items: center);
 }
 
 .wrapper {
@@ -51,6 +54,7 @@
   flex-grow: 1;
   max-height: 270px;
   height: 6vmax;
+  position: relative;
 
   &__item {
     @include flex($justify-content: center);

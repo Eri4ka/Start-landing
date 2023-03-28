@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended"],
+  "extends": ["plugin:react/recommended", "react-app"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -18,9 +18,9 @@
         "groups": ["builtin", "external", "internal"],
         "pathGroups": [
           {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
+            "pattern": "**/*.{scss,png}",
+            "group": "internal",
+            "position": "after"
           }
         ],
         "pathGroupsExcludedImportTypes": ["react"],

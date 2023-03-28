@@ -17,7 +17,7 @@ export const Main = () => {
   const logoPosition = useTransform(scrollYProgress, [0, 0.2], ['40%', '0%']);
   const cloudOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
   const cloudTxtOpacity = useTransform(scrollYProgress, [0.4, 0.6], [0, 1]);
-  const btnsPosition = useTransform(scrollYProgress, [0.6, 0.8], ['50%', '0%']);
+  const btnsPosition = useTransform(scrollYProgress, [0.6, 0.8], ['55%', '0%']);
   const btnsTxtOpacity = useTransform(scrollYProgress, [0.8, 1], [0, 1]);
 
   return (
